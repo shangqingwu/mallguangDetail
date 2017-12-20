@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html{
+    font-size: 100px;
+    background: #fff;
+    font-family: '微软雅黑','PingFangSC', 'STHeiti', 'Microsoft YaHei', 'Helvetica', 'Arial', sans-serif;
+    -webkit-text-size-adjust: none;
+    word-break: break-all;
+}
+body{
+    font-size: .32rem;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #131313;
+}
+p {
+    font-size: .34rem;
+    color: #020202;
+    line-height: .34rem;
+    border: none;
+    outline: none;
+    max-height: 100%;
+}

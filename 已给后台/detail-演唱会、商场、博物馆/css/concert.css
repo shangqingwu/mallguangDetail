@@ -1,0 +1,211 @@
+.content{
+    width: 100%;
+    height: 12.8rem;
+}
+.content .concert-header{
+    width: 100%;
+    height: 4.39rem;
+}
+.content .concert-header .concert-bg {
+    position: relative;
+}
+.content .concert-header .concert-bg .large-pic{
+    position: relative;
+    width: 100%;
+    height: 3.55rem;
+}
+.content .concert-header .concert-bg .large-pic img{
+    width: 100%;
+    height: 3.45rem;
+     filter: blur(10px);
+     -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+    -o-filter: blur(10px);
+}
+.content .concert-header .concert-bg .small-pic{
+    position: absolute;
+    left: .3rem;
+    top: 1.58rem;
+    width: 2.27rem;
+    height: 2.77rem;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+.content .concert-header .concert-bg .small-pic img{
+    width: 100%;
+    height: 100%;
+}
+.content .concert-header .concert-bg p{
+    position: absolute;
+    top: 1.81rem;
+    left: 2.76rem;
+    width: 4.14rem;
+    font-size: .32rem;
+    color: #fff;
+}
+.content .concert-header .concert-bg .price{
+    font-size: .26rem;
+    color: #f85a3d;
+    line-height: .54rem;
+    padding-top: .23rem;
+}
+.content .concert-header .concert-bg .price span{
+    font-size: .3rem;
+    padding-left: 2.82rem;
+    line-height: .58rem;
+}
+.content .museum-info{
+    font-size: .34rem;
+    height: 7.62rem;
+}
+.content .museum-info p{
+    font-size: .34rem;
+    height: .56rem;
+    line-height: .56rem;
+    font-weight: normal;
+    color: #f85a3d;
+}
+.content .museum-info .info-list{
+    margin: .2rem 0 .15rem;
+    padding: 0 .3rem;
+}
+.content .museum-info .info-list .item{
+    height: .62rem;
+    line-height: .62rem;
+    color: #8d8d8d;
+    font-size: 0;
+}
+.content .museum-info .info-list .item i{
+    display: inline-block;
+    width: .32rem;
+    height: .32rem;
+    background: url("../images/sprite.png") no-repeat;
+    margin: .15rem .15rem 0 0;
+}
+.content .museum-info .info-list .item span{
+    font-size: .3rem;
+    vertical-align: top;
+    display: inline-block;
+    width: 4.2rem;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.content .museum-info .info-list .info-time i{
+    background-position: 0 0;
+    background-size: cover;
+}
+.content .museum-info .info-list .info-location{
+    overflow: hidden;
+}
+.content .museum-info .info-list .info-location .location{
+    background-position: 0 -.37rem;
+    background-size: cover;
+}
+.content .museum-info .info-list .info-location .more{
+    float: right;
+    background-position: 0 -1.39rem;
+    background-size: cover;
+    margin-right: 0;
+}
+.content .museum-info .info-line{
+    width: 100%;
+    height: .1rem;
+    background: #f7f7f7;
+}
+.content .museum-info .info-guarantee{
+    padding: 0 .3rem;
+    height: .75rem;
+    line-height: .75rem;
+    font-size: 0;
+}
+.content .museum-info .info-guarantee .item{
+    display: inline-block;
+    height: 100%;
+    line-height: 1;
+    color: #020202;
+    font-size: 0;
+    width: 25%;
+    overflow: hidden;
+}
+.content .museum-info .info-guarantee .item i{
+    display: inline-block;
+    width: .32rem;
+    height: .32rem;
+    background: url(../images/sprite.png) no-repeat;
+    background-position: 0 -1.13rem;
+    background-size: cover;
+    margin: .23rem .15rem 0 0;
+}
+.content .museum-info .info-guarantee .item span{
+    font-size: .24rem;
+    vertical-align: top;
+    line-height: .75rem;
+}
+.content .museum-info .info-guarantee .item .more{
+    float: right;
+    width: .32rem;
+    height: .3rem;
+    background-position: 0 -1.4rem;
+    background-size: cover;
+    margin: 0.195rem 0 0;
+}
+.content .museum-info .info-description{
+    padding: 0 .3rem;
+    margin-top: .35rem;
+}
+.content .museum-info .info-description .title{
+    height: .54rem;
+    line-height: .54rem;
+    font-size: 0;
+    width: 2.45rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.content .museum-info .info-description .title span{
+    display: inline-block;
+    width: .36rem;
+    height: .03rem;
+    border-radius: 1px;
+    background: #d2d2d2;
+    margin-top: .255rem;
+}
+.content .museum-info .info-description .title span:nth-of-type(1){
+    float: left;
+}
+.content .museum-info .info-description .title span:nth-of-type(2){
+    float: right;
+}
+.content .museum-info .info-description .title h2{
+    display: inline-block;
+    font-size: .32rem;
+    font-weight: normal;
+}
+.content .museum-info .info-description .text{
+    margin-top: .2rem;
+    width: 100%;
+    color: #595959;
+    font-size: .26rem;
+    line-height: 2;
+    display:-webkit-box;
+    overflow:hidden;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    word-break: break-word;
+}
+
+
+
+.content .download{
+    font-size: .32rem;
+    margin: 0 auto .4rem;
+    width: 6.6rem;
+    height: .98rem;
+    line-height: .98rem;
+    background: #ff6800;
+    border-radius: .08rem;
+    color: #fff;
+    text-align: center;
+}

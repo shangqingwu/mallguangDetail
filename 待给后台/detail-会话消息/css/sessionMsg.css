@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html{
+    font-size: 100px;
+}
+body{
+    font-size: .28rem;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    word-break: break-all;
+}
+.msg{
+    padding: 0 .3rem 1.28rem;
+}
+.msg .header{
+    padding: .2rem 0;
+
+}
+.msg .header .msg-title{
+    line-height: .54rem;
+    font-size: .34rem;
+}
+.msg .header .msg-title span{
+    display: inline-block;
+    line-height: 0.44rem;
+}
+.msg .header .msg-time{
+    line-height: .48rem;
+    color: #908f8f;
+}
+.msg .content{
+    padding: 0 0 .3rem;
+}
+.msg .content p{
+    padding: .13rem 0;
+    font-size: .28rem;
+    line-height: .42rem;
+}
+.download-bg{
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    width: 100%;
+    height: 1.28rem;
+    background: #fff;
+}
+.download-bg .download{
+    position: absolute;
+    bottom: .3rem;
+    left: 50%;
+    right: 50%;
+    margin-left: -3.3rem;
+    font-size: .32rem;
+    width: 6.6rem;
+    height: .98rem;
+    line-height: .98rem;
+    background: #ff6800;
+    border-radius: .08rem;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

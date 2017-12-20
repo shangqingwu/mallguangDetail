@@ -1,0 +1,110 @@
+.content{
+    width: 100%;
+    height: 12.8rem;
+}
+.content .mall-bg {
+    position: relative;
+    width: 100%;
+    height: 3.6rem;
+}
+.content .mall-bg .info-border{
+    position: absolute;
+    width: 3.1rem;
+    height: auto;
+    border: 1px solid #fff;
+    bottom: .1rem;
+    left: 50%;
+    margin-left: -1.55rem;
+}
+.content .mall-bg .mall-info{
+    height: auto;
+    background: #fff;
+    margin: .05rem .04rem;
+    text-align: center;
+    filter: alpha(opacity = 90);
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+}
+.content .mall-bg .mall-info h2{
+    font-size: .28rem;
+    font-weight: normal;
+    color: #ff6800;
+    height: .54rem;
+    line-height: .54rem;
+}
+.content .mall-bg .mall-info span{
+    display: inline-block;
+    font-size: .18rem;
+    vertical-align: top;
+    width: 2.48rem;
+}
+.content .mall-bg .mall-info .info-star{
+    width: 100%;
+    height: .21rem;
+    line-height: .21rem;
+    margin-bottom: .11rem;
+}
+.content .mall-bg .mall-info .info-star i{
+    display: inline-block;
+    width: .21rem;
+    height: 100%;
+    background: url("../images/star.png") no-repeat;
+    background-size: .21rem 100%;
+}
+.content .mall-bg .mall-info .info-location{
+    height: auto;
+    line-height: 1;
+    font-size: 0;
+    text-align: left;
+    padding-left: .18rem;
+    margin-bottom: .1rem;
+}
+.content .mall-bg .mall-info .info-location i{
+    display: inline-block;
+    width: .14rem;
+    height: .2rem;
+    background: url("../images/location.png") no-repeat;
+    background-size: contain;
+    margin-right: .1rem;
+    min-width: 8.4px;
+    min-height: 12px;
+}
+.content .mall-bg .mall-info .info-time{
+    padding-left: .16rem;
+    margin-bottom: 0;
+    padding-bottom: .1rem;
+}
+.content .mall-bg .mall-info .info-time i{
+    width: .18rem;
+    height: .18rem;
+    background: url("../images/time.png") no-repeat;
+    background-size: contain;
+    min-width: 12px;
+}
+.content .news{
+    margin-top: .2rem;
+    font-size: .32rem;
+    padding: 0 .28rem;
+    height: 7.62rem;
+}
+.content .news p{
+    display: inline-block;
+    width: 100%;
+    height: .54rem;
+    line-height: .54rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #ff6800;
+}
+.content .download{
+    font-size: .32rem;
+    margin: 0 auto .4rem;
+    width: 6.6rem;
+    height: .98rem;
+    line-height: .98rem;
+    background: #ff6800;
+    border-radius: .08rem;
+    color: #fff;
+    text-align: center;
+}

@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100px;
+}
+body{
+    font-size: .28rem;
+    width: 100%;
+    height: 100%;
+}
+ul,li{
+    list-style: none;
+}
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 3.6rem;
+    overflow: hidden;
+    text-align: center;
+}
+.wrap .inner{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.wrap .inner div{
+    float: left;
+}
+.wrap .inner div img{
+    width: 7.2rem;
+    height: 3.6rem;
+    vertical-align: top;
+    border: none;
+}
+.wrap .wrap-info{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: .5rem;
+    line-height: .5rem;
+    padding-left: .3rem;
+    font-size: .26rem;
+}
+.wrap .wrap-info .info-text{
+    float: left;
+    color: #fff;
+}
+.wrap .wrap-info .info-num{
+    float: right;
+    width: 1.25rem;
+    height: 100%;
+    background: url("../images/bg.png")  no-repeat 0 0;
+    background-size: cover;
+    color: #fff;
+}
+.museum-info .info-list{
+    margin: .2rem 0 .15rem;
+    padding: 0 .3rem;
+}
+.museum-info .info-list .item{
+    height: .62rem;
+    line-height: .62rem;
+    color: #020202;
+    font-size: 0;
+}
+.museum-info .info-list .item i,.content .content-list .ticket i{
+    display: inline-block;
+    width: .35rem;
+    height: .32rem;
+    background: url("../images/sprite.png") no-repeat;
+    margin: .15rem .15rem 0 0;
+}
+.museum-info .info-list .item span{
+    font-size: .3rem;
+    vertical-align: top;
+    display: inline-block;
+    width: 5.2rem;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.museum-info .info-list .info-time i{
+    background-position: 0 0;
+    background-size: cover;
+}
+.museum-info .info-list .info-location{
+    overflow: hidden;
+}
+.museum-info .info-list .info-location .location{
+    background-position: 0 -.33rem;
+    background-size: cover;
+}
+.museum-info .info-list .item .more,.content .content-list .ticket .more,.content .content-list .ticket .notice .notice-time .more{
+    float: right;
+    background-position: 0 -1.28rem;
+    background-size: cover;
+    margin-right: 0;
+    height: .26rem;
+}
+.museum-info .info-line,.content .info-line{
+    width: 100%;
+    height: .1rem;
+    background: #f7f7f7;
+}
+.museum-info .info-location-line,.content .info-location-line{
+    width: 100%;
+    height: 1px;
+    background: #e5e5e5;
+}
+.content .sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: #fff;
+}
+.content .fixed{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background: #fff;
+}
+.content .title-list{
+    width: 100%;
+    font-size: 0;
+    height: .88rem;
+    line-height: .86rem;
+}
+.content .title-list li{
+    display: inline-block;
+    width: 33%;
+    font-size: .3rem;
+    text-align: center;
+}
+.content .title-list li span{
+    display: inline-block;
+    width: 1.23rem;
+}
+.content .title-list li.on{
+    color: #ff6800;
+}
+.content .title-list li.on span{
+    border-bottom: 2px solid #ff6800;
+}
+/* 选项卡 - 购票 */
+.content .content-list .content-item{
+    display: none;
+    padding-bottom: 1.28rem
+;
+}
+.content .content-list .content-item .ticket-info{
+    padding: 0 .3rem;
+}
+.content .content-list .ticket .ticket-info-item:last-child .info-location-line,.content .content-list .comment .comment-item:last-child .info-location-line{
+    display: none;
+}
+.content .content-list .content-item.show{
+    display: block
+}
+.content .content-list .ticket i{
+    margin: .24rem .18rem 0 0;
+}
+.content .content-list .ticket .info-ticket{
+    height: .78rem;
+    line-height: .78rem;
+    font-size: 0;
+}
+.content .content-list .ticket .info-ticket span{
+    font-size: .3rem;
+    vertical-align: top;
+}
+.content .content-list .ticket .ticket-icon{
+    width: .35rem;
+    height: .34rem;
+    background-position: 0 -.66rem;
+    background-size: cover;
+}
+.content .content-list .ticket .more{
+    height: .14rem;
+    background-position: 0 -1.85rem;
+    background-size: cover;
+    margin-top: .34rem;
+}
+.content .content-list .ticket .special{
+    height: .58rem;
+    line-height: .58rem;
+    overflow: hidden;
+    margin-top: .1rem;
+}
+.content .content-list .content-item span.text-ellipsis{
+    display: inline-block;
+    width: 5.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.content .content-list .ticket .special .special-title{
+    width: 4.3rem;
+}
+.content .content-list .ticket .special .price{
+    display: inline-block;
+    color: #ff6800;
+    font-size: 0;
+    float: right;
+    height: 100%;
+}
+.content .content-list .ticket .special .price span{
+    font-size: .24rem;
+}
+.content .content-list .ticket .special .price .price-text{
+    font-size: .34rem;
+}
+.content .content-list .ticket .pay{
+    width: 100%;
+}
+.content .content-list .ticket .pay .pay-info {
+    display: inline-block;
+}
+.content .content-list .ticket .pay .pay-info .payment{
+    width: 1rem;
+    min-width: 52px;
+    height: .34rem;
+    line-height: .34rem;
+    background: #ff6800;
+    font-size: .2rem;
+    color: #fff;
+    text-align: center;
+    margin-top: .1rem;
+}
+.content .content-list .ticket .pay .pay-info .book-info{
+    height: .86rem;
+    line-height: .86rem;
+    font-size: 0;
+}
+.content .content-list .ticket .pay .pay-info .book-info i{
+    height: .26rem;
+}
+.content .content-list .ticket .pay .pay-info .book-info i.info{
+    margin: .29rem .05rem 0 0;
+    background-position: 0 -1.01rem;
+    background-size: cover;
+}
+.content .content-list .ticket .pay .pay-info .book-info i.more{
+    margin: .29rem 0 0 .1rem;
+    background-position: 0 -1.55rem;
+    background-size: cover;
+}
+.content .content-list .ticket .pay .pay-info .book-info span{
+    font-size: .26rem;
+    display: inline-block;
+    vertical-align: top;
+}
+.content .content-list .ticket .pay .pay-info .book-info span.book-today{
+    color: #8291ca;
+    width: 2.91rem;
+}
+.content .content-list .ticket .pay .pay-info .book-info span.book-des{
+    padding-left: .25rem;
+    color: #908f8f;
+}
+.content .content-list .ticket .pay .pay-text {
+    float: right;
+    text-align: right;
+}
+.content .content-list .ticket .pay .pay-text .before-price{
+    color: #908f8f;
+    font-size: .24rem;
+    text-decoration: line-through;
+    height: .24rem;
+    line-height: .24rem;
+}
+.content .content-list .ticket .pay .pay-text .book{
+    width: 1.4rem;
+    height: .6rem;
+    line-height: .6rem;
+    background: #ff6800;
+    color: #fff;
+    font-size: .3rem;
+    border-radius: 3px;
+    text-align: center;
+    margin-top: .14rem;
+}
+.content .content-list .ticket .notice{
+    padding: 0 .3rem;
+}
+.content .content-list .ticket .notice .notice-title{
+    height: .84rem;
+    line-height: .84rem;
+    font-size: 0;
+}
+.content .content-list .ticket .notice .notice-title i.notice-icon{
+    margin-right: .23rem;
+    height: .3rem;
+    background-position: 0 -2.05rem;
+    background-size: cover;
+}
+.content .content-list .ticket .notice .notice-title span{
+    display: inline-block;
+    font-size: .28rem;
+    vertical-align: top;
+}
+.content .content-list .ticket .notice .notice-remind{
+    height: .34rem;
+    line-height: .34rem;
+}
+.content .content-list .ticket .notice .notice-time{
+    height: .74rem;
+    line-height: .74rem;
+    margin-bottom: .07rem;
+    color: #a1a1a1;
+}
+.content .content-list .ticket .notice .notice-time .more{
+    margin-top: .23rem;
+}
+.content .content-list .ticket .ticket-footer{
+    position: relative;
+    height: .96rem;
+    line-height: .96rem;
+    font-size: 0;
+    text-align: center;
+    margin: 0 auto;
+    background: #eee;
+}
+.content .content-list .ticket .ticket-footer .title,.content .content-list .ticket .ticket-footer p {
+    position: relative;
+    font-size: .28rem;
+    color: #727171;
+    width: 3.56rem;
+    left: 50%;
+    right: 50%;
+    margin-left: -1.78rem;
+}
+.content .content-list .ticket .ticket-footer .title.left:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 50%;
+    width: .65rem;
+    height: 1px;
+    background: #dbdbdb;
+    left: .14rem;
+}
+.content .content-list .ticket .ticket-footer p.right:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 50%;
+    width: .65rem;
+    height: 1px;
+    background: #dbdbdb;
+    right: .14rem;
+}
+/* 选项卡 - 景点介绍 */
+.content .content-list .description{
+    padding: 0 .3rem 1.28rem;
+    font-size: 0;
+}
+.content .content-list .description p{
+    padding: .3rem 0;
+    font-size: .28rem;
+    color: #908f8f;
+    line-height: .42rem;
+}
+/* 选项卡 - 评论 */
+.content .content-list .comment{
+    padding: 0 .3rem 1.28rem;
+}
+.content .content-list .comment .comment-item{
+    margin: .3rem 0 .2rem;
+    font-size: 0;
+    overflow: hidden;
+}
+.content .content-list .comment .comment-item .comment-avatar{
+    display: inline-block;
+    width: .7rem;
+    height: .7rem;
+    border-radius: 50%;
+    float: left;
+}
+.content .content-list .comment .comment-item .comment-avatar img{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.content .content-list .comment .comment-item .comment-info{
+    padding-left: .2rem;
+    display: inline-block;
+    font-size: .28rem;
+    color: #020202;
+    width: 5.9rem;
+}
+.content .content-list .comment .comment-item .comment-info .name{
+    font-size: .3rem;
+    height: .42rem;
+    line-height: .42rem;
+}
+.content .content-list .comment .comment-item .comment-info .comment-time{
+    font-size: 0;
+    height: .4rem;
+    line-height: .4rem;
+}
+.content .content-list .comment .comment-item .comment-info .comment-time span{
+    display: inline-block;
+    font-size: .24rem;
+    color: #010101;
+    opacity: .7;
+    margin-right: .24rem;
+}
+.content .content-list .comment .comment-item .comment-info .comment-time span:last-child{
+    margin-right: 0;
+}
+.content .content-list .comment .comment-item .comment-info .comment-star{
+    font-size: 0;
+    height: .5rem;
+    line-height: .5rem;
+}
+.content .content-list .comment .comment-item .comment-info .comment-star div{
+    display: inline-block;
+    font-size: .26rem;
+}
+.content .content-list .comment .comment-item .comment-info .comment-star .comment-star-num{
+    font-size: 0;
+    line-height: .5rem;
+    height: .5rem;
+    padding: .11rem 0;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.content .content-list .comment .comment-item .comment-info .comment-star .comment-star-num i{
+    display: inline-block;
+    width: .35rem;
+    height: .28rem;
+    background: url("../images/sprite.png") 0 -2.38rem no-repeat;
+    background-size: cover;
+}
+.content .content-list .comment .comment-item .comment-info .comment-text{
+    font-size: .28rem;
+    margin-bottom: .18rem;
+}
+.content .content-list .comment .comment-item .comment-info .comment-img{
+    font-size: 0;
+    margin-bottom: .2rem;
+}
+.content .content-list .comment .comment-item .comment-info .comment-img img{
+    display: inline-block;
+    width: 1.85rem;
+    height: 1.75rem;
+    margin: 0 .06rem .06rem 0;
+}
+.content .content-list .comment .comment-item .comment-info .comment-img img:nth-of-type(3n){
+    margin-right: 0;
+}
+.download-bg{
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    width: 100%;
+    height: 1.28rem;
+    background: #fff;
+}
+.download-bg .download{
+    position: absolute;
+    bottom: .3rem;
+    left: 50%;
+    right: 50%;
+    margin-left: -3.3rem;
+    font-size: .32rem;
+    width: 6.6rem;
+    height: .98rem;
+    line-height: .98rem;
+    background: #ff6800;
+    border-radius: .08rem;
+    color: #fff;
+    text-align: center;
+}
